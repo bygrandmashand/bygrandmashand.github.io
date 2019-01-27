@@ -1,0 +1,82 @@
+body {
+	font-size: 2em;
+	padding: 0;
+}
+a {
+	color: #41ade5;
+	text-decoration: none;
+}
+a:hover {
+	color: #e54177;
+}
+h1 {
+	font-size: 4em;
+	margin: 0 0 .75em 0;
+}
+h2 {
+	font-size: 2em;
+	margin: 0 0 .5em 0;
+}
+.content {
+	padding: 2em 4em;
+}
+.layer1 {
+	background: #41ade5;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	padding: 2em 4em;
+}
+.layer1:after {  
+	background: inherit;
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	transform: skewY(-8deg);
+	transform-origin: 100%;
+	z-index: -1;
+}
+.layer2 {
+	background: #e5ca41;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 10%;
+}
+.layer2:after {
+	background: inherit;
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	transform: skewY(-4.5deg);
+	transform-origin: 100%;
+	z-index: -1;
+}
+.layer3 {
+	background: #e54177;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 10%;
+}
+.layer3:after {
+	background: inherit;
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	transform: skewY(0deg);
+	transform-origin: 100%;
+	z-index: -1;
+}
